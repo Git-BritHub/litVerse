@@ -6,18 +6,20 @@ const thoughtsSchema = new Schema(
         thoughtText: {
             type: String,
             required: true,
-            // must be between 1 and 280 characters
+            maxlength: 280,
+            minlength: 1,
         },
         createdAt: {
-            // Date
-            // Set default value to the current timestamp
+            type: Date,
+            default: Date.now,
             // Use a getter method to format the timestamp on query
+            getters: true,
         },
         username: {
             type: String,
             required: true,
         },
-        reactions: [reactionsSchema],
+        reactions: [reactionSchema],
     },
     {
         toJSON: {
