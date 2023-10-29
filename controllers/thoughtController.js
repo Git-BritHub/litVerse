@@ -68,4 +68,29 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+   // Create a reaction
+   async addReaction(req, res) {
+    try {
+      const reaction = await Reaction.create(req.body);
+      res.json(reaction);
+    } catch (err) {
+      console.log(err);
+      return res.status(500).json(err);
+    }
+  },
+  // Delete a reaction
+  async deleteReaction(req, res) {
+    try {
+      const reaction = await Reaction.findOneAndDelete({ _id: req.params.reactionId });
+
+      if (!reaction) {
+        res.status(404).json({ message: 'No reaction with that ID' });
+      }
+
+      await User.deleteMany({ _id: { $in: reaction.users } });
+      res.json({ message: 'Reactions from user deleted!' });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  },
 };
