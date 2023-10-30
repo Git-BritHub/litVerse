@@ -31,9 +31,9 @@ const thoughtsSchema = new Schema(
 );
 
 // Define virtual for reactionCount
-userSchema.virtual('reactionCount').get(function() {
+userSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
-  });
+});
 
 const Thought = model('thought', thoughtsSchema);
 
