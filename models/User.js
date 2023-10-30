@@ -1,33 +1,42 @@
 const { Schema, model } = require('mongoose');
-const thoughtSchema = require('./Thought');
 
 // Schema to create User model
 const userSchema = new Schema(
   {
     username: {
       type: String,
+      unique: true,
       required: true,
       max_length: 50,
-    //   Trimmed
+      trim: true,
     },
     email: {
       type: String,
-      required: true,
       unique: true,
-    //   Must match a valid email address, look into matching validation
-    },
-    thoughts: [thoughtsSchema],
-    friends: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: 'User',
+      validate: {
+        validator: (v) => /^([a-z0-9_\.-]+)@([\da-z\.\-]+)\.([a-z\.]{2,6})$/.test(v),
+        message: (props) => `${props.value} is not a valid email address`,
         },
+      required: [true, 'User email required'],
+    },
+    thoughts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Thought',
+      },
+    ],
+    friends: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+      },
     ],
   },
   {
     toJSON: {
-      getters: true,
+      virtuals: true,
     },
+    id: false,
   }
 );
 
