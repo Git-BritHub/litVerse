@@ -19,7 +19,6 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // TODO: Create function for date format in helpers.js file
             get: formatDate,
         },
     },

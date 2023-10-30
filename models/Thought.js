@@ -14,7 +14,6 @@ const thoughtsSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            // Create function for date format in helpers.js file
             get: formatDate,
         },
         username: {
