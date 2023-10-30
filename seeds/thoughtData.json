@@ -1,0 +1,52 @@
+[
+    {
+        "thoughtText": "I'm almost finished with my Full Stack Flex Web Development Program!",
+        "createdAt": "3:45:30 PM 10/29/2023",
+        "username": "undefined_user1"
+    },
+    {
+        "thoughtText": "I just learned a new programming language today!",
+        "createdAt": "8:15:45 AM 10/30/2023",
+        "username": "spongebob_user2"
+    },
+    {
+        "thoughtText": "I love solving complex algorithms!",
+        "createdAt": "9:30:20 AM 10/30/2023",
+        "username": "khaleesi_user3"
+    },
+    {
+        "thoughtText": "The design of the new app is looking amazing!",
+        "createdAt": "10:45:10 AM 10/30/2023",
+        "username": "mikey_user4"
+    },
+    {
+        "thoughtText": "Code is poetry, and I'm the poet!",
+        "createdAt": "12:55:30 PM 10/30/2023",
+        "username": "robinwilliams_user5"
+    },
+    {
+        "thoughtText": "I just found a cool open-source project to contribute to!",
+        "createdAt": "1:40:15 PM 10/30/2023",
+        "username": "winnonaryder_user6"
+    },
+    {
+        "thoughtText": "Learning never stops in the world of tech.",
+        "createdAt": "2:25:40 PM 10/30/2023",
+        "username": "myneighborTotoro_user7"
+    },
+    {
+        "thoughtText": "I'm excited about my upcoming coding bootcamp!",
+        "createdAt": "3:10:25 PM 10/30/2023",
+        "username": "jamesbond_user8"
+    },
+    {
+        "thoughtText": "Solving bugs is like solving puzzles; I enjoy both!",
+        "createdAt": "3:55:50 PM 10/30/2023",
+        "username": "letitgo_user9"
+    },
+    {
+        "thoughtText": "I'm passionate about building innovative software.",
+        "createdAt": "4:30:35 PM 10/30/2023",
+        "username": "zeldaluvshyrule_user10"
+    }
+]
