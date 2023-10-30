@@ -4,7 +4,9 @@
   "description": "Social Network API utilizing Express.js for routing, a MongoDB database, and Mongoose ODM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./seeds/seed.js"
+
   },
   "keywords": [],
   "author": "",
