@@ -29,7 +29,8 @@ litVerse provides the backend software for a social network. This social network
 
 ## Usage
 This API requires MongoDB to be installed on your computer<br />
-1. Input `npm run start` in your terminal to initiate API backend.
+1. Input `npm run seed` in your terminal to seed the database.
+2. Input `nodemon server.js` or `node server.js` in your terminal to run the application. 
 2. When testing the routes, feel free to follow my walkthrough video in the [Tests](#tests) section.
 <br />
 
