@@ -100,15 +100,14 @@ module.exports = {
   },
   // Add a friend to a User
   async addFriend(req, res) {
-    console.log('You are adding a friend');
-    console.log(req.body);
-
+    // console.log(req.body);
+    // console.log('You added a friend!');
     try {
       const user = await User.findOneAndUpdate(
         { _id: req.params.userId },
-        { $addToSet: { friends: req.body } },
+        { $addToSet: { friends: req.params.friendId } },
         { runValidators: true, new: true }
-      );
+        );
 
       if (!user) {
         return res
@@ -126,7 +125,7 @@ module.exports = {
     try {
       const user = await User.findOneAndUpdate(
         { _id: req.params.userId },
-        { $pull: { friend: { friendId: req.params.friendId } } },
+        { $pull: { friends: { friendId: req.params.friendId } } },
         { runValidators: true, new: true }
       );
 
