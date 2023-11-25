@@ -29,9 +29,13 @@ module.exports = {
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
+      const user = await User.findOneAndUpdate(
+        { _id: req.body.userId },
+        { $addToSet: { thoughts: thought._id }},
+      )
       res.json(thought);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       return res.status(500).json(err);
     }
   },
@@ -45,7 +49,7 @@ module.exports = {
       }
 
       await User.deleteMany({ _id: { $in: thought.users } });
-      res.json({ message: 'Thought and users deleted!' });
+      res.json({ message: 'Thought deleted!' });
     } catch (err) {
       res.status(500).json(err);
     }
