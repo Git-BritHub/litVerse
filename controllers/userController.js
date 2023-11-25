@@ -88,7 +88,7 @@ module.exports = {
 
       if (!thought) {
         return res.status(404).json({
-          message: 'User deleted, but no thougths found',
+          message: 'User deleted, but no thoughts found',
         });
       }
 
