@@ -5,9 +5,9 @@ Social Network API utilizing Express.js for routing, a MongoDB database, and Mon
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Walkthrough](#walkthrough)
 * [License](#license)
 * [Contributing](#contributing)
-* [Walkthrough](#walkthrough)
 * [Questions](#questions)
 
 
@@ -35,6 +35,10 @@ This API requires MongoDB to be installed on your computer<br />
 <br />
 <img width="1512" alt="litVerseScreenshot" src="https://github.com/Git-BritHub/litVerse/assets/130286884/f2674121-25d0-4c8a-a516-d51c30c97395">
 
+## Walkthrough
+Route Testing performed on macOS with Insomnia\
+[Route Testing Walkthrough with Insomnia](https://drive.google.com/file/d/1a4ibuqAB3XrPkEuCaY1MFI4_DtQ5mcZ-/view)
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-aqua.svg)](https://opensource.org/licenses/MIT)
 
@@ -43,11 +47,6 @@ This API requires MongoDB to be installed on your computer<br />
 * https://www.npmjs.com/package/mongoose
 * https://regexr.com/
 * Guidance and feedback from Software Developers: Dru Sanchez and CJ Sanders.
-
-
-## Walkthrough
-Route Testing performed on macOS with Insomnia\
-[Route Testing Walkthrough with Insomnia](https://drive.google.com/file/d/1a4ibuqAB3XrPkEuCaY1MFI4_DtQ5mcZ-/view)
 
 ## Questions
 If you find any bugs or have any questions, feel free to reach out to me through GitHub at https://github.com/Git-BritHub 
