@@ -43,7 +43,7 @@ This API requires MongoDB to be installed on your computer<br />
 * https://mongoosejs.com/docs/guides.html
 * https://www.npmjs.com/package/mongoose
 * https://regexr.com/
-* Guidance and feedback from Software Developer -- Dru Sanchez.
+* Guidance and feedback from Software Developers: Dru Sanchez and CJ Sanders.
 
 
 ## Walkthrough
