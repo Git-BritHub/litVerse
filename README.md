@@ -33,8 +33,7 @@ This API requires MongoDB to be installed on your computer<br />
 2. Input `nodemon server.js` or `node server.js` in your terminal to run the application. 
 2. When testing the routes, feel free to follow my walkthrough video in the [Walkthrough](#walkthrough) section.
 <br />
-
-
+<img width="1512" alt="litVerseScreenshot" src="https://github.com/Git-BritHub/litVerse/assets/130286884/f2674121-25d0-4c8a-a516-d51c30c97395">
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-aqua.svg)](https://opensource.org/licenses/MIT)
