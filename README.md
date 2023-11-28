@@ -7,7 +7,7 @@ Social Network API utilizing Express.js for routing, a MongoDB database, and Mon
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
+* [Walkthrough](#walkthrough)
 * [Questions](#questions)
 
 
@@ -31,7 +31,7 @@ litVerse provides the backend software for a social network. This social network
 This API requires MongoDB to be installed on your computer<br />
 1. Input `npm run seed` in your terminal to seed the database.
 2. Input `nodemon server.js` or `node server.js` in your terminal to run the application. 
-2. When testing the routes, feel free to follow my walkthrough video in the [Tests](#tests) section.
+2. When testing the routes, feel free to follow my walkthrough video in the [Walkthrough](#walkthrough) section.
 <br />
 
 
@@ -46,9 +46,9 @@ This API requires MongoDB to be installed on your computer<br />
 * Guidance and feedback from Software Developer -- Dru Sanchez.
 
 
-## Tests
+## Walkthrough
 Route Testing performed on macOS with Insomnia\
-[Route Testing]()
+[Route Testing Walkthrough with Insomnia](https://drive.google.com/file/d/1a4ibuqAB3XrPkEuCaY1MFI4_DtQ5mcZ-/view)
 
 ## Questions
 If you find any bugs or have any questions, feel free to reach out to me through GitHub at https://github.com/Git-BritHub 
